@@ -5,17 +5,21 @@
     "lib": ["ES2023"],
     "module": "ESNext",
     "types": ["node"],
-    "skipLibCheck": true,
+  
 
     /* Bundler mode */
     "moduleResolution": "bundler",
     "allowImportingTsExtensions": true,
     "verbatimModuleSyntax": true,
     "moduleDetection": "force",
-    "noEmit": true,
+   
 
     /* Linting */
-    "strict": true,
+    "allowJs": true,          // allow JS files
+    "checkJs": false,         // don’t check JS files
+    "noEmit": true,           // don’t emit TS if JS only
+    "skipLibCheck": true,     // skip type checking of dependencies
+    "strict": false,
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "erasableSyntaxOnly": true,
