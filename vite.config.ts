@@ -8,4 +8,12 @@ export default defineConfig({
     react(),
     tailwindcss()
   ],
+   esbuild: {
+    tsconfigRaw: {
+      compilerOptions: {
+        strict: false,
+
+      },
+    },
+  },
 })

@@ -69,7 +69,7 @@ export default function SectionBlock({
             return (
               <RowItem
                 key={key}
-                rowKey={key}
+                
                 label={r.label}
                 ph={r.ph}
                 rowData={state.rows[key]}
@@ -82,7 +82,7 @@ export default function SectionBlock({
           {extraKeys.map((key) => (
             <RowItem
               key={key}
-              rowKey={key}
+              
               label="+"
               ph="Add item…"
               rowData={state.extraRows[key]}

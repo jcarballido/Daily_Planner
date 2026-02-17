@@ -15,13 +15,29 @@ import SectionBlock from "./components/SectionBlock";
 import MoodPicker from "./components/MoodPicker";
 import NotesSection from "./components/NotesSections";
 
+type Row = {
+  text: string;
+  done: boolean;
+};
+
+type Rows = Record<string, Row>;
+
+type DayState = {
+  focus: string;
+  mood: string;
+  notes: string;
+  workStart: string;
+  workEnd: string;
+  rows: Rows;
+  extraRows: Rows;
+};
+
 export default function App() {
   const [date, setDate] = useState(new Date());
 
-  const [state, setState] = useState(() =>
-    loadState(`myDay_${dateKey(new Date())}`) ||
-    initDayState()
-  );
+const [state, setState] = useState<DayState>(() =>
+  loadState(`myDay_${dateKey(new Date())}`) || initDayState()
+);
 
   const [collapsed, setCollapsed] = useState({});
 

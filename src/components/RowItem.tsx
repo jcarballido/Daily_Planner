@@ -1,6 +1,6 @@
 export default function RowItem({
 
-  rowKey,
+
   label,
   ph,
   rowData,

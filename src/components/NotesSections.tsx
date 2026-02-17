@@ -12,10 +12,7 @@ export default function NotesSection({
         placeholder="Thoughts, reminders, ideas…"
         value={value}
         onChange={(e) => onChange(e.target.value)}
-        onInput={(e) => {
-          e.target.style.height = "auto";
-          e.target.style.height = e.target.scrollHeight + "px";
-        }}
+
         className="w-full bg-transparent border-none outline-none text-sm text-[#F0EDE8] resize-none px-3 py-3 leading-[1.7] min-h-[88px] block"
       />
     </div>
