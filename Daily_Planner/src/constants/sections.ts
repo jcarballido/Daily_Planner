@@ -1,0 +1,86 @@
+const SECTIONS = [
+  {
+    id: "morning",
+    icon: "🌅",
+    title: "Morning Routine",
+    time: "4:00 AM – 7:00 AM",
+    color: "#F5A623",
+    rows: [
+      { label: "4:00 AM", ph: "Wake up, water, stretch…" },
+      { label: "4:30 AM", ph: "Shower, skincare, brush…" },
+      { label: "5:00 AM", ph: "Workout / walk…" },
+      { label: "6:00 AM", ph: "Breakfast, coffee…" },
+      { label: "6:30 AM", ph: "Plan day, journal…" },
+    ],
+  },
+  {
+    id: "meals",
+    icon: "🍽️",
+    title: "Meals",
+    time: "Throughout the day",
+    color: "#E85D75",
+    rows: [
+      { label: "Breakfast", ph: "What are you having?" },
+      { label: "Lunch", ph: "What are you having?" },
+      { label: "Dinner", ph: "What are you having?" },
+      { label: "Snacks", ph: "Any snacks today?" },
+    ],
+  },
+  {
+    id: "chores",
+    icon: "🐾",
+    title: "Chores & Pet",
+    time: "As needed",
+    color: "#4ECDC4",
+    addable: true,
+    rows: [
+      { label: "Morning pet care", ph: "Feed, walk, meds…" },
+      { label: "Evening pet care", ph: "Feed, walk, bedtime…" },
+      { label: "Chore 1", ph: "e.g. Laundry, dishes…" },
+      { label: "Chore 2", ph: "e.g. Vacuum, bins…" },
+      { label: "Chore 3", ph: "Add a chore…" },
+    ],
+  },
+  {
+    id: "work",
+    icon: "💼",
+    title: "Work",
+    time: "Schedule changes daily",
+    color: "#60A5FA",
+    isWork: true,
+    rows: [
+      { label: "Task 1", ph: "What needs to get done?" },
+      { label: "Task 2", ph: "What needs to get done?" },
+      { label: "Task 3", ph: "What needs to get done?" },
+      { label: "Task 4", ph: "What needs to get done?" },
+    ],
+  },
+  {
+    id: "flex",
+    icon: "✨",
+    title: "Free / Flex Time",
+    time: "When you have a moment",
+    color: "#A78BFA",
+    addable: true,
+    rows: [
+      { label: "Flex 1", ph: "e.g. Read, game, errands…" },
+      { label: "Flex 2", ph: "e.g. Call someone, hobby…" },
+      { label: "Flex 3", ph: "Something fun…" },
+    ],
+  },
+  {
+    id: "evening",
+    icon: "🌙",
+    title: "Evening Wind-down",
+    time: "7:00 PM – 9:00 PM",
+    color: "#F97316",
+    rows: [
+      { label: "7:00 PM", ph: "Dinner, dishes, clean up…" },
+      { label: "7:45 PM", ph: "Relax, TV, scroll…" },
+      { label: "8:30 PM", ph: "Prep for tomorrow…" },
+      { label: "9:00 PM", ph: "Bedtime routine, lights out…" },
+    ],
+  },
+];
+
+export default SECTIONS
